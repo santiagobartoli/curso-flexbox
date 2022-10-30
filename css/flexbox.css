@@ -1,0 +1,92 @@
+/*Este CSS es el que hice con el curso Flexbox. El `style.css` ya ven'ia hecho.*/
+
+.headerPrincipal .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerPrincipal-nav {
+    display: flex; /*also could be `display: inline-block`*/
+
+}
+
+/*contenido principal*/
+
+/*para hacer el grid con los cursos y espaciarlos se debe armar con flezbox y espaciarlos entre ellos calculando
+el ancho deseado y el margin deseado de cada uno. Si se hace con `space-between` la ultima linea puede quedar
+muy espaciada*/
+.contenidoPrincipal-cursos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenidoPrincipal-cursos-link {
+    width: 23%;
+}
+
+/*footer*/
+
+.rodapePrincipal-navMap-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 260px;
+}
+
+.rodapePrincipal-patrocinadores .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+    display: flex;
+}
+
+/*responsive*/
+
+@media (max-width:768px) {
+    
+    .headerPrincipal .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .headerPrincipal-nav {
+        flex-direction: column;
+    }
+
+    .contenidoPrincipal-cursos {
+        flex-direction: column;
+    }
+
+    .contenidoPrincipal-cursos-link {
+        width: auto;
+    }
+
+    .videoSobre-sobre {
+        text-align: center;
+    }
+
+    .videoSobre-button {
+        margin: auto;
+    }
+
+    .rodapePrincipal-navMap-list {
+        height: auto;
+    }
+
+    .rodapePrincipal-patrocinadores .container {
+        flex-direction: column;
+    }
+
+    .rodapePrincipal-contatoForm-fieldset {
+        justify-content: center;
+    }
+}
