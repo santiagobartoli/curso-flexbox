@@ -24,6 +24,32 @@ muy espaciada*/
     width: 23%;
 }
 
+/*video section*/
+
+.videoSobre .container {
+    display: flex;
+}
+
+.videoSobre-video {
+    flex-grow: 3;
+    flex-shrink: 2;
+}
+
+.videoSobre-sobre {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-grow: 2;
+}
+
+.videoSobre-sobre-list {
+    flex-grow: 2; /*usa un grow para ocupar mas espacio con esta clase pushing next button element to the bottom*/
+}
+
+.videoSobre-button {
+    width: 100%;
+}
+
 /*footer*/
 
 .rodapePrincipal-navMap-list {
@@ -62,12 +88,20 @@ muy espaciada*/
         flex-direction: column;
     }
 
+    .headerPrincipal-nav-link-app {
+        order: -1;
+    }
+
     .contenidoPrincipal-cursos {
         flex-direction: column;
     }
 
     .contenidoPrincipal-cursos-link {
         width: auto;
+    }
+
+    .videoSobre .container {
+        flex-direction: column;
     }
 
     .videoSobre-sobre {
